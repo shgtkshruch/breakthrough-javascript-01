@@ -1,0 +1,24 @@
+{
+  "name": "breakthrough-javascript-01",
+  "scripts": {
+    "publish": "./github-pages.sh"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-jade": "*",
+    "gulp-ruby-sass": "*",
+    "browser-sync": "*",
+    "gulp-coffee": "*",
+    "gulp-csscomb": "*",
+    "gulp-combine-media-queries": "*",
+    "gulp-plumber": "*",
+    "gulp-changed": "*",
+    "gulp-filter": "*",
+    "gulp-useref": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-load-plugins": "*",
+    "wiredep": "*",
+    "coffee-script": "*"
+  }
+}
+
