@@ -1,0 +1,35 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset='UTF-8')
+    title breakthrough-javascript-01
+    meta(content='IE=edge', http-equiv='X-UA-Compatible')
+    meta(content='author', name='author')
+    meta(content='description', name='description')
+    meta(content='keywords', name='keywords')
+    meta(content='width=device-width, initial-scale=1' name='viewport')
+    meta(content='telephone=no', name='format-detection')
+
+    link(rel='stylesheet', href='styles/style.css', media='all')
+  body
+    .container
+      - labels = ['アカウントを作成', 'パスワードを作成']
+      each val, i in labels
+        .row
+          .col
+            label= val
+          .col
+            input(type="text" placeholder="４文字以上８文字以内で入力してください" data-minlength=4 data-maxlength=8 required)
+            ul
+              li(data-error="required") 必須項目です
+              li(data-error="minlength") ４文字以上で入力してください
+              li(data-error="maxlength") ８文字以上で入力してください
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='../bower_components/jquery/dist/jquery.js')
+    // endbower
+    // endbuild
+
+    // build:js scripts/main.js
+    script(src='scripts/script.js')
+    // endbuild
