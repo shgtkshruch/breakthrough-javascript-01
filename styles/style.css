@@ -1,0 +1,59 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  padding: 40px;
+}
+
+.row {
+  display: table;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.row .col {
+  display: table-cell;
+}
+
+.row .col:first-child {
+  width: 200px;
+}
+
+.row .col label {
+  font-weight: bold;
+}
+
+.row .col input {
+  font-size: 100%;
+  min-width: 400px;
+  padding: .5em 0;
+  border: none;
+  border-bottom: 1px solid #9E9E9E;
+  outline: none;
+}
+
+.row .col input.error {
+  border-color: #E51C23;
+}
+
+.row .col ul {
+  margin-top: .5em;
+}
+
+.row .col li {
+  display: none;
+  margin-top: .5em;
+  padding-left: 20px;
+  color: #E51C23;
+  background-image: url('../images/error.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 12px 12px;
+}
+
+.row .col li:first-child {
+  margin-top: 0;
+}

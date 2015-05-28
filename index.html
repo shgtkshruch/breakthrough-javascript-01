@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>breakthrough-javascript-01</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="author" name="author">
+    <meta content="description" name="description">
+    <meta content="keywords" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="styles/style.css" media="all">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label>アカウントを作成</label>
+        </div>
+        <div class="col">
+          <input type="text" placeholder="４文字以上８文字以内で入力してください" data-minlength='4' data-maxlength='8' required>
+          <ul>
+            <li data-error="required">必須項目です</li>
+            <li data-error="minlength">４文字以上で入力してください</li>
+            <li data-error="maxlength">８文字以上で入力してください</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label>パスワードを作成</label>
+        </div>
+        <div class="col">
+          <input type="text" placeholder="４文字以上８文字以内で入力してください" data-minlength='4' data-maxlength='8' required>
+          <ul>
+            <li data-error="required">必須項目です</li>
+            <li data-error="minlength">４文字以上で入力してください</li>
+            <li data-error="maxlength">８文字以上で入力してください</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- build:js scripts/vendor.js-->
+    <!-- bower:js-->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:js scripts/main.js-->
+    <script src="scripts/script.js"></script>
+    <!-- endbuild-->
+  </body>
+</html>
